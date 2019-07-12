@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttomwhite"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:scaleX=".9"
+    android:scaleY=".9"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal">
+
+        <design.MyTextView
+            android:id="@+id/from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+
+            android:text="مغاغة "
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight=".5"
+            android:layoutDirection="rtl"
+            android:src="@drawable/togreen" />
+
+        <design.MyTextView
+            android:id="@+id/to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:paddingLeft="10dp"
+            android:text="القاهر "
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:id="@+id/edit_lay"
+
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.2">
+
+
+            <design.MyButton
+                android:id="@+id/edit"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="#F0F4C3"
+                android:layoutDirection="rtl"
+                android:text="مسح"
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <design.MyTextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:text="2018/8/18 "
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <design.MyTextView
+            android:id="@+id/degree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:layout_weight="3"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:text="ثانية مكيفة "
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:paddingRight="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+
+            android:orientation="horizontal">
+
+            <design.MyTextView
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="5"
+                android:gravity="right"
+                android:layoutDirection="ltr"
+                android:text="12:10"
+                android:textColor="#000"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="15dp">
+
+            <design.MyTextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".6"
+                android:gravity="right"
+                android:layoutDirection="rtl"
+                android:paddingRight="7dp"
+                android:text="32"
+                android:textColor="#000"
+                android:textSize="13dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/callBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back_bt_call"
+        android:elevation="8dp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <design.MyButton
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/back_bt_call"
+            android:drawableLeft="@drawable/caller2"
+
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text=" اتصال بصاحب التذكرة"
+            android:textColor="#ffff"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</LinearLayout>

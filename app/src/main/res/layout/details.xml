@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7c7c7">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/workerSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+
+                android:background="@drawable/button2"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+               >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/exit3" />
+
+
+                <design.MyEditText
+                    android:id="@+id/fromText"
+                    android:inputType="text|textMultiLine"
+                    android:scrollHorizontally="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="من"
+                    android:layoutDirection="rtl"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/home3" />
+
+                <design.MyEditText
+                    android:id="@+id/toText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/transparent"
+                    android:hint=" الى"
+                    android:inputType="text|textMultiLine"
+                    android:layoutDirection="rtl"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button2"
+            android:layoutDirection="rtl"
+            android:padding="8dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layoutDirection="rtl"
+                android:src="@drawable/phone" />
+
+            <design.MyEditText
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:background="@android:color/transparent"
+                android:hint="رقم التليفون"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:layoutDirection="rtl"
+                android:textColor="#95BD3D"
+                android:textColorHint="#95BD3D" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="7dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/price" />
+
+                <design.MyEditText
+                    android:gravity="center"
+                    android:id="@+id/priceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="السعر"
+                    android:inputType="number"
+                    android:layoutDirection="rtl"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1.1"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/degree" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_degree"
+                    style="@style/Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/degrees">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/timeLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttomwhite"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingTop="13dp"
+                android:paddingRight="40dp"
+
+                android:paddingBottom="13dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+
+                    android:layout_marginRight="15dp"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/clock" />
+
+
+                <design.MyTextView
+                    android:id="@+id/timetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+
+                    android:hint="الوقت"
+                    android:layoutDirection="rtl"
+                    android:paddingRight="5dp"
+                    android:textColor="#FFC110"
+                    android:textColorHint="#FFC110" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttomwhite"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingTop="13dp"
+                android:paddingRight="40dp"
+
+                android:paddingBottom="13dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+                    android:paddingTop="4dp"
+                    android:src="@drawable/calendar" />
+
+
+                <design.MyTextView
+                    android:id="@+id/datetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="التاريخ"
+                    android:paddingRight="3dp"
+                    android:textColor="#FFC110"
+                    android:textColorHint="#FFC110" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingTop="13dp"
+
+                android:paddingBottom="13dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layoutDirection="rtl"
+                    android:src="@drawable/lock" />
+
+                <design.MyEditText
+                    android:id="@+id/passDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:hint="كلمة مرور للتعديل"
+                    android:inputType="numberSigned|numberDecimal|numberPassword|number"
+                    android:layoutDirection="rtl"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/back_bt_call"
+            android:elevation="8dp"
+            android:layoutDirection="rtl"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <design.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+
+                android:text="  بيع التذكرة"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+        <include layout="@layout/ads_layout" />
+
+    </LinearLayout>
+
+
+</ScrollView>

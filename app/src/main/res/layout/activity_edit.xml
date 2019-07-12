@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#dedede">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layoutDirection="rtl"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/workerSearch_Edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/exit3" />
+
+
+                <design.MyEditText
+                    android:inputType="text"
+                    android:id="@+id/fromText_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:hint="من"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_gravity="center"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/home3" />
+
+                <design.MyEditText
+                    android:id="@+id/toText_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:hint=" الى"
+                    android:inputType="text"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layoutDirection="rtl"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+
+                android:paddingTop="13dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/phone" />
+
+                <design.MyEditText
+                    android:id="@+id/phoneText_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:hint="رقم التليفون"
+                    android:inputType="phone"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layoutDirection="rtl"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/price" />
+
+                <design.MyEditText
+                    android:id="@+id/priceText_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint=" سعر التذكرة"
+                    android:textColor="#95BD3D"
+                    android:inputType="number"
+                    android:textColorHint="#95BD3D"                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/degree" />
+
+
+                <design.MyEditText
+                    android:id="@+id/degreeText_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:hint="درجة القطار"
+                    android:textColor="#95BD3D"
+                    android:inputType="text"
+                    android:textColorHint="#95BD3D"        />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/timeLayout_Edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:background="@drawable/buttomwhite"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+                android:paddingRight="40dp"
+
+                android:paddingTop="13dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/clock" />
+
+
+                <design.MyTextView
+                    android:id="@+id/timetext_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="الوقت"
+                    android:paddingRight="5dp"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#000" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateLayout_Edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/buttomwhite"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+                android:layout_marginLeft="8dp"
+                android:paddingRight="40dp"
+
+                android:paddingTop="13dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="left"
+                    android:paddingTop="4dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/calendar" />
+
+
+                <design.MyTextView
+                    android:id="@+id/datetext_Edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:paddingRight="3dp"
+                    android:background="@android:color/transparent"
+                    android:hint="التاريخ"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#000" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button2"
+                android:elevation="8dp"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+
+                android:paddingTop="13dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/lock" />
+
+                <design.MyEditText
+                    android:id="@+id/pass_Edit"
+                    android:layout_width="0dp"
+                    android:layoutDirection="rtl"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="6"
+                    android:background="@android:color/transparent"
+                    android:hint="كلمة المرور للتعديل"
+                    android:inputType="text"
+                    android:textColor="#95BD3D"
+                    android:textColorHint="#95BD3D" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Edit_btn"
+            android:layout_width="match_parent"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="8dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_bt_call"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <design.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text=" تم التعديل"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
